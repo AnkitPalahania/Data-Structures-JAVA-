@@ -38,10 +38,20 @@ public class MyLinkedList
 		}
 		
 		System.out.println("----------------THE NAMES ARE------------------ ");
-		for(temp=first;temp!=null;temp=temp.next)
+		for(temp=first;temp!=null;temp=temp.next)     //can use a while loop as well :)
 		{
 			System.out.println(temp.name);
 		}
+		
+		//Just in case if you are are finding it difficult to understand the above for loop , you can use the below for loop
+		// But it is not recommended every time :)
+		/*
+		for(int i=1;i<=n;i++)
+		{
+			System.out.println(first.name);
+			first=first.next;
+		}
+		*/
 	}
 	
 }
