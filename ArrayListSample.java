@@ -1,17 +1,11 @@
-package DATA_STRUCTURES;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayListSample
-{   int [] numbers;       //ARRAY
+{   
+    private ArrayList<String> items=new ArrayList<String>();   
 
-    //ARRAY LIST HOLDS THE DATA AS OBJECT HENCE WE DON'T KNOW THEIR DATA TYPE , SO WE USE <E>
-    //::::::::::::::: int ArrayList is error:::::::::::: BUT :::::::::::ArrayList<Integer> is VALID::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-    private ArrayList<String> items=new ArrayList<String>();   //ArrayList is a CLASS
-
-    //ADDING THE ITEMS AT
+    //ADDING THE ITEMS AT BEGINNING
     public void addItems(String item_names)
     {
         items.add(item_names);
@@ -20,7 +14,7 @@ public class ArrayListSample
     //PRINTING THE ELEMENTS
     public void printItems()
     {
-        System.out.println("YOU HAVE: "+items.size()+ " ELEMENTS");    //obj.size() to show no. of elements in ArrayList
+        System.out.println("YOU HAVE: "+items.size()+ " ELEMENTS");  
 
         for(int i=0;i<items.size();i++)
         System.out.println((i+1)+" ELEMENT IS : "+items.get(i));
@@ -67,9 +61,9 @@ public class ArrayListSample
         int choice;
         while(!quit)
         {
-            System.out.println(":::::::::::::::::::::::::ENTER UR CHOICE::::::::::::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::::::::::::::ENTER UR CHOICE(0-6) ONLY::::::::::::::::::::::::::::::::::::");
             choice=sc.nextInt();
-            sc.nextLine();          //CREATING AN INPUT BUFFER
+            sc.nextLine();     //CREATING INPUT BUFFER     
 
             switch (choice)
             {
